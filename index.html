@@ -8,10 +8,14 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link href="https://necolas.github.io/normalize.css/7.0.0/normalize.css" rel="stylesheet">
     
+    
     <style>
-        
+    /* https://css-tricks.com/viewport-sized-typography/ */    
         body {font-family: 'Open Sans', sans-serif;
         display:flex;flex-direction:column;}
+        
+        header {background-color:palevioletred;width:100%;height:20vh;overflow-y:hidden;}
+        header img {height:50vh;margin:0;border:0;padding:0;position:relative;top:-15vh;}
         
         body > * {margin:auto;padding:0 10%;}
         
@@ -24,31 +28,46 @@
         h4 {font-size:1.2em;}
         h5 {font-size:1.2em;}
         h6 {font-size:1em;}
+        
+        
+        #welcome, #intro, #description, #attorneys, #associations, #contact, #form {}
+        
+        #welcome {}
+        #intro {}
+        #description {}
+        #attorneys {}
+        #associations {}
+        #contact {}
+        #form {}
+        
     </style>
     
 </head>
 <body>
     <header>
-       <h1>Proulx Law Offices</h1>
+        <!--<h1>Proulx Law Offices</h1>-->
+       <img src="/logo_transparent.png" alt="Proulx Law Offices">
     </header>
     <main>
-    <section>
-<p>Bankruptcy is not the end....<br />Bankruptcy is a new beginning.<br />
+
+<section id='welcome'>
+<p>Bankruptcy is not the end.... Bankruptcy is a new beginning.<br />
 Let me help you take your first step towards a fresh start!</p>    
 </section>
-<section>
+
+<section id='intro'>
 <p>Hello. My name is Jenny Proulx. <br />I am an attorney who represents debtors in the bankruptcy courts of Massachusetts and New Hampshire.  I understand the hardships in life.</p>
 
-<p>Life’s misfortunes, job loss, terminal illness, death of a loved one, disability and a whole host of unfortunate events can lead to overwhelming financial problems.<br />If you are on my website, then you are probably suffering with the financial aftermath of one or more of life’s events. Please let me help you.   And please, find some solace in the resource pages of on my Facebook page.</p>
+<p id='description'>Life’s misfortunes, job loss, terminal illness, death of a loved one, disability and a whole host of unfortunate events can lead to overwhelming financial problems.<br />If you are on my website, then you are probably suffering with the financial aftermath of one or more of life’s events. Please let me help you.   And please, find some solace in the resource pages of on my Facebook page.</p>
 </section>
-<section>
+<section id='attorneys'>
 <p>Jenny Louise Proulx<br />
 Attorney at Law</p>
 
 <p>Kenneth M. Proulx<br />
 Paralegal and Title Examiner</p>
 </section>
-   <section>
+   <section id='associations'>
     <h5>Admitted:</h5>
 <p>    Commonwealth of Massachusetts<br />
     State of New Hampshire<br />
@@ -61,8 +80,7 @@ Paralegal and Title Examiner</p>
 <p>Boston Bar Association<br />New Hampshire Bar Association<br />Rhode Island Association</p>
 </section>
 
-<section>
-
+<section id='contact'>
 
 <p class="vcard">
     <a class="fn org url" href="http://jplaw.me" title="Proulx Law Offices Contact Informtion">
@@ -83,18 +101,14 @@ Paralegal and Title Examiner</p>
     </span>
 </p>
 <p>and several office locations in Boston area and northern Massachusetts</p>
+        </section>
+        <section id='form'>
 
-
- <form>
-  First name:<br />
-  <input type="text" name="firstname"><br />
-  Email Address:<br />
-  <input type="text" name="email"><br />
-  Phone Number:<br />
-  <input type="text" name="phonenum"><br />
-  Issue:<br />
-  <input type="text" name="issue"><br />
-  
+<form>
+  First name: <input type="text" name="firstname"><br />
+  Email Address: <input type="text" name="email"><br />
+  Phone Number: <input type="text" name="phonenum"><br />
+  Issue: <input type="text" name="issue"><br />
 </form> 
 
 </section>
@@ -107,9 +121,6 @@ The use of the Internet or this form for communication with the firm or any indi
 
 
 See my FACEBOOK for things to feel good about . . . .  
-
-	
-
 								
 FACEBOOK
 How to Stop harassing phone calls (Create interesting ICON - Hyperlink to do not call letter)
