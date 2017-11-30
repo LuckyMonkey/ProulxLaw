@@ -4,136 +4,152 @@
     <meta charset="UTF-8">
     <title>Proulx Law Offices</title>
     
-    
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400" rel="stylesheet">
     <link href="https://necolas.github.io/normalize.css/7.0.0/normalize.css" rel="stylesheet">
     
-    
     <style>
-    /* https://css-tricks.com/viewport-sized-typography/ */    
-        body {font-family: 'Open Sans', sans-serif;
-        display:flex;flex-direction:column;}
+        #description, #attorneys, #associations, #contact, #form {padding:0 10%;}
+        body {display:flex;flex-direction:column;}
+        body > * {margin:auto;}
+        header {width:100%;height:10vh;text-align:center;}
+        header h1 {margin:0;border:0;padding:0;position:relative;top:2vh;}
         
-        header {background-color:palevioletred;width:100%;height:20vh;}
-        header h1 {font-size:7vh;margin:0;border:0;padding:0;color:white;
-        text-shadow: 2px 2px #ff0000;}
-        
-        body > * {margin:auto;padding:0 10%;}
-        
+        /* https://css-tricks.com/viewport-sized-typography/ */    
+        body {font-family:'Open Sans', sans-serif;}
+        header {background-color:rebeccapurple;
+            background-image: linear-gradient(to top right, rebeccapurple 0%, darkviolet 100%);box-shadow:2px 0px 8px #222;}
+        header h1 {font-family:'comfortaa', cursive;color:white;text-shadow:2px 2px 2px #222;font-size:6vh;}
         .noShow {display:none;}
         h2, h3, h4, h5, h6 {margin:0 0 0.3em 0;}
         h1, h3, h5 {font-weight:normal;}
-        h1 {font-size:2.5em;}
         h2 {font-size:2.5em;}
         h3 {font-size:1.5em;}
         h4 {font-size:1.2em;}
         h5 {font-size:1.2em;}
         h6 {font-size:1em;}
+            
         
-        
-        #welcome, #intro, #description, #attorneys, #associations, #contact, #form {}
-        
-        #welcome {}
-        #intro {}
-        #description {}
-        #attorneys {}
+
+        #welcome {font-family:'comfortaa', cursive;font-style:italic;}
+        #intro {font-size:2.2vw;text-shadow:3px 3px 3px #888; background-image: url('WP_20170206_14_17_16_Pro.jpg');background-size: cover; padding:8vh;color:white;box-shadow:2px 2px 2px #222;}
+        #attorneys p {font-size:1.2em;width:50%;float:left;}
         #associations {}
         #contact {}
         #form {}
-        
-    </style>
-    
+        #intro .left div {display:block;width:70%;}
+        /** LIGHTBOX MARKUP **/
+
+.lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+
+	/** Position and style */
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+.lightbox div {
+	/** Pad the lightbox image */
+	max-width: 90%;
+	max-height: 80%;
+	margin-top: 2%;
+}
+
+.lightbox:target {
+	/** Remove default browser outline */
+	outline: none;
+
+	/** Unhide lightbox **/
+	display: block;
+}
+
+    </style>    
 </head>
 <body>
-    <header>
-        <h1>Proulx Law Offices</h1>
-    </header>
-    <main>
+<header>
+    <h1>Proulx Law Offices</h1>
+</header>
+<main>
 
-<section id='welcome'>
-<p>Bankruptcy is not the end.... Bankruptcy is a new beginning.<br />
-Let me help you take your first step towards a fresh start!</p>    
-</section>
 
 <section id='intro'>
-<p>Hello. My name is Jenny Proulx. <br />I am an attorney who represents debtors in the bankruptcy courts of Massachusetts and New Hampshire.  I understand the hardships in life.</p>
-
-<p id='description'>Life’s misfortunes, job loss, terminal illness, death of a loved one, disability and a whole host of unfortunate events can lead to overwhelming financial problems.<br />If you are on my website, then you are probably suffering with the financial aftermath of one or more of life’s events. Please let me help you.   And please, find some solace in the resource pages of on my Facebook page.</p>
+  <div id='left'>
+   <p id='welcome'>Bankruptcy is not the end.... Bankruptcy is a new beginning.<br /> Let me help you take your first step towards a fresh start!</p>
+    <p>Hello. My name is Jenny Proulx. <br />I am an attorney representing debtors in the bankruptcy courts of Massachusetts and New Hampshire. I understand the hardships in life.</p>
+    <p>Life’s misfortunes, job loss, terminal illness, death of a loved one, disability and a whole host of unfortunate events lead to overwhelming financial problems.<br />If you are suffering with the financial aftermath life’s events. Please let me help you.   And please, find some solace in the resource pages of on my  Facebook page.</p>
+    </div><div id='right'>
+    <p id='attorneys'>Jenny Louise Proulx<br /><sub>Attorney at Law</sub></p>
+    <p>Kenneth M. Proulx<br /><sub>Paralegal and Title Examiner</sub></p>
+</div>
 </section>
-<section id='attorneys'>
-<p>Jenny Louise Proulx<br />
-Attorney at Law</p>
 
-<p>Kenneth M. Proulx<br />
-Paralegal and Title Examiner</p>
-</section>
-   <section id='associations'>
+
+
+<section id='associations'>
     <h5>Admitted:</h5>
-<p>    Commonwealth of Massachusetts<br />
-    State of New Hampshire<br />
-    State of Rhode Island<br />
-    First Circuit Court of Appeals<br />
-    United States District Courts for the District of Massachusetts and the District of New Hampshire<br />
-    Bankruptcy Appellate Panel.
-</p>
-<h5>Professional Associations:</h5>
-<p>Boston Bar Association<br />New Hampshire Bar Association<br />Rhode Island Association</p>
+    <p>Commonwealth of Massachusetts<br />State of New Hampshire<br />State of Rhode Island<br />First Circuit Court of Appeals<br />United States District Courts for the District of Massachusetts and the District of New Hampshire<br />Bankruptcy Appellate Panel.</p>
+    <h5>Professional Associations:</h5>
+    <p>Boston Bar Association<br />New Hampshire Bar Association<br />Rhode Island Association</p>
 </section>
 
 <section id='contact'>
-
-<p class="vcard">
-    <a class="fn org url" href="http://jplaw.me" title="Proulx Law Offices Contact Informtion">
-        <span class="noShow organization-name">Jenny Proulx</span>
-        <span class="noShow organization-unit">Proulx Law Offices</span>
-    </a>
-    <br/>
-    <span class="adr">
-        <a class="extended-address" href="http://jplaw.me">Proulx Law Offices</a><br />
-        <span class="street-address">1087 Elm Street, Suite 223</span><br /> 
-        <span class="locality">Manchester</span>, <span class="region">New Hampshire</span>
-        <span class="postal-code">03101</span>
-        <span class="noShow country">USA</span>
-        <br>
-        <span class="tel"><span class="type">Telephone (Massachusetts)</span>:<span class="value">+1(617) 335-8145</span></span><br />
-        <span class="tel"><span class="type">Telephone (New Hampshire)</span>:<span class="value">+1(603) 731-3965</span></span><br />
-        <span class="tel"><span class="type">Fax</span>: <span class="value">+1(617) 507-7693</span></span>
-    </span>
-</p>
-<p>and several office locations in Boston area and northern Massachusetts</p>
-        </section>
-        <section id='form'>
-
-<form>
-  First name: <input type="text" name="firstname"><br />
-  Email Address: <input type="text" name="email"><br />
-  Phone Number: <input type="text" name="phonenum"><br />
-  Issue: <input type="text" name="issue"><br />
-</form> 
-
+    <p class="vcard">
+        <a class="fn org url" href="http://jplaw.me" title="Proulx Law Offices Contact Informtion">
+            <span class="noShow organization-name">Jenny Proulx</span>
+            <span class="noShow organization-unit">Proulx Law Offices</span>
+        </a>
+        <br/>
+        <span class="adr">
+            <a class="extended-address" href="http://jplaw.me">Proulx Law Offices</a><br />
+            <span class="street-address">1087 Elm Street, Suite 223</span><br /> 
+            <span class="locality">Manchester</span>, <span class="region">New Hampshire</span>
+            <span class="postal-code">03101</span>
+            <span class="noShow country">USA</span>
+            <br>
+            <span class="tel"><span class="type">Telephone (Massachusetts)</span>:<span class="value">+1(617) 335-8145</span></span><br />
+            <span class="tel"><span class="type">Telephone (New Hampshire)</span>:<span class="value">+1(603) 731-3965</span></span><br />
+            <span class="tel"><span class="type">Fax</span>: <span class="value">+1(617) 507-7693</span></span>
+        </span>
+    </p>
+    <p>and several office locations in Boston area and northern Massachusetts</p>
 </section>
 
+
+<a href="#img1">
+  <p>contact us</p>
+</a>
+
+<!-- lightbox container hidden with CSS -->
+<a href="#_" class="lightbox" id="img1">
+  
+   <div>
+   <section id='form'>
+    <form>
+        First name: <input type="text" name="firstname"><br />
+        Email Address: <input type="text" name="email"><br />
+        Phone Number: <input type="text" name="phonenum"><br />
+        Issue: <input type="text" name="issue"><br />
+    </form>
+</section>
+    </div>
+</a>
 <!--
-Ninaparker.com
 Disclaimer language
 The use of the Internet or this form for communication with the firm or any individual member of the firm does not establish an attorney-client relationship. Confidential or time-sensitive information should not be sent through this form.
-
-
-
-See my FACEBOOK for things to feel good about . . . .  
-								
+							
 FACEBOOK
 How to Stop harassing phone calls (Create interesting ICON - Hyperlink to do not call letter)
 Timeline of a Chapter 7 Case  (use my handout)
-Approved credit counseling agencies
-MA (seal) 
-http://www.justice.gov/ust/eo/bapcpa/ccde/CC_Files/CC_Approved_Agencies_HTML/cc_massachusetts/cc_massachusetts.htm
-NH (seal)  http://www.justice.gov/ust/eo/bapcpa/ccde/CC_Files/CC_Approved_Agencies_HTML/cc_new_hampshire/cc_new_hampshire.htm
-What to bring when you meet with me (see AVVO expandable and recreate)
-            
+Approved credit counseling agencies         
              -->
-    </main>
-    <footer></footer>
+</main>
+<footer></footer>
 </body>
 </html>
