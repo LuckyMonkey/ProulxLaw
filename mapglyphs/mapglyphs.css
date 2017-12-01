@@ -6,11 +6,11 @@
  */
 @font-face {
 	font-family: 'MapGlyphs';
-	src:url('MapGlyphs.eot');
-	src:url('MapGlyphs.eot?#iefix') format('embedded-opentype'),
-		url('MapGlyphs.ttf') format('truetype'),
-		url('MapGlyphs.woff') format('woff'),
-		url('MapGlyphs.svg#mapglyphs') format('svg');
+	src:url('https://raw.githubusercontent.com/LuckyMonkey/proulxlaw/master/mapglyphs/MapGlyphs.eot');
+	src:url('https://raw.githubusercontent.com/LuckyMonkey/proulxlaw/master/mapglyphs/MapGlyphs.eot?#iefix') format('embedded-opentype'),
+		url('https://raw.githubusercontent.com/LuckyMonkey/proulxlaw/master/mapglyphs/MapGlyphs.ttf') format('truetype'),
+		url('https://raw.githubusercontent.com/LuckyMonkey/proulxlaw/master/mapglyphs/MapGlyphs.woff') format('woff'),
+		url('https://raw.githubusercontent.com/LuckyMonkey/proulxlaw/master/mapglyphs/MapGlyphs.svg#mapglyphs') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
