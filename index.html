@@ -7,13 +7,15 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400" rel="stylesheet">
     <link href="https://necolas.github.io/normalize.css/7.0.0/normalize.css" rel="stylesheet">
+    <link href='/mapglyphs/mapglyphs.css' rel='stylesheet'>
+    
     <script src="https://use.fontawesome.com/c59b006972.js"></script>
     <style>
 
 body {display:flex;flex-direction:column;}
 body > * {margin:auto;}
 
-header {width:100%;height:7vh;text-align:left;}
+header {width:100%;height:7vh;text-align:left;z-index:5;box-shadow:2px 2px 8px #222;}
 header h1 {margin:0;position:relative;top:2vh;left:10px;}
 
 main {padding-bottom:20px;box-shadow:0px 4px 20px #222}
@@ -117,12 +119,7 @@ i:after {content:'_';visibility:hidden;}
         </div>
     </div>
 </section>
-<section id='description'>
-    <h5>Bankruptcy is not the end....<br />Bankruptcy can be a new beginning.</h5><p>Let me help you take your first step towards a fresh start!</p>
-    <p>Hello. My name is Jenny Proulx. I am an attorney representing debtors in the bankruptcy courts of Massachusetts and New Hampshire. I understand the hardships in life.</p>
-    <p>Life’s misfortunes, job loss, terminal illness, death of a loved one, disability and a whole host of unfortunate events lead to overwhelming financial problems.</p>
-    <p>If you are suffering with the financial aftermath of life’s events, then please let me help you. Please find some solace in the resources available on my Facebook and LinkedIn pages.</p>
-</section>
+
 <section id='associations'>
     <div>
         <h5>Admitted:</h5>
@@ -138,10 +135,19 @@ i:after {content:'_';visibility:hidden;}
     <div>
         <h5>Professional Associations:</h5>
         <p>Boston Bar Association<br />
-        New Hampshire Bar Association<br />
+        <i class='mg map-us-nh'></i>New Hampshire Bar Association<br />
         Rhode Island Bar Association</p>
     </div>
 </section>
+
+<section id='description'>
+    <h5>Bankruptcy is not the end....<br />Bankruptcy can be a new beginning!</h5><p>Let me help you take your first step towards a fresh start!</p>
+    <p>Hello. My name is Jenny Proulx. I am an attorney representing debtors in the bankruptcy courts of Massachusetts and New Hampshire. I understand the hardships in life.</p>
+    <p>Life’s misfortunes, job loss, terminal illness, death of a loved one, disability and a whole host of unfortunate events lead to overwhelming financial problems.</p>
+    <p>If you are suffering with the financial aftermath of life’s events, then please let me help you. Please find some solace in the resources available on my Facebook and LinkedIn pages.</p>
+</section>
+
+
  <section id='buttons'>
    <a href="#img1" class='hibiscus'>Get Started</a>
    <a class='mobileHide hibiscus'>Facebook Page</a>
