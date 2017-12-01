@@ -6,8 +6,8 @@
  */
 @font-face {
 	font-family: 'MapGlyphs';
-	src:url('http://luckymonkey.github.io/proulxlaw/mapglyphs/mapglyphs/MapGlyphs.eot');
-	src:url('http://luckymonkey.github.io/proulxlaw/mapglyphs/mapglyphs/MapGlyphs.eot?#iefix') format('embedded-opentype'),
+	src:url('http://luckymonkey.github.io/proulxlaw/mapglyphs/MapGlyphs.eot');
+	src:url('http://luckymonkey.github.io/proulxlaw/mapglyphs/MapGlyphs.eot?#iefix') format('embedded-opentype'),
 		url('http://luckymonkey.github.io/proulxlaw/mapglyphs/MapGlyphs.ttf') format('truetype'),
 		url('http://luckymonkey.github.io/proulxlaw/mapglyphs/MapGlyphs.woff') format('woff'),
 		url('http://luckymonkey.github.io/proulxlaw/mapglyphs/MapGlyphs.svg#mapglyphs') format('svg');
