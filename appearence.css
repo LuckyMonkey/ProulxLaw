@@ -1,0 +1,88 @@
+/* Divine CSS Styles */
+body {display:flex;flex-direction:column;}
+body > * {margin:auto;}
+
+header {width:100%;height:7vh;text-align:left;z-index:5;box-shadow:2px 2px 8px #222;}
+header h1 {margin:0;position:relative;top:2vh;left:10px;}
+
+main {padding-bottom:20px;box-shadow:0px 4px 20px #222;min-height:100vh;}
+@media screen and (max-width: 1400px) {main {width:100%;}}
+main section {padding:1vh 11%;}
+
+body {font-family:'Open Sans', sans-serif;background:#ddd;background-image:url('https://raw.githubusercontent.com/LuckyMonkey/proulxlaw/master/regal.png')}
+main {background:#fff;}
+main section {font-family:'Open Sans';font-weight:300;}
+    
+h1 {font-family:'comfortaa', cursive;color:#222;font-size:3vh;}
+h2, h3, h4, h5, h6 {margin:0 0 0.3em 0;}
+h1, h3, h5 {font-weight:normal;}
+h2 {font-size:2.5em;}
+h3 {font-size:1.5em;}
+h4 {font-size:1.2em;}
+h5 {font-size:1.2em;}
+h6 {font-size:1em;}
+p {font-size:1em;}
+i:after {content:'_';visibility:hidden;}
+sup {position:relative;top:0.1em;left:0.1em;}
+.hide {display:none;}
+@media screen and (max-width: 1085px) {.mobileHide {display:none;}}
+
+/* Page Sections and Element layout */
+#intro {display:flex;flex-direction:row-reverse;align-items:center;padding:4vw 8vw;min-height:46vh}
+#welcome {flex:1 1 auto;padding:30px;}
+#attorneys {flex:2 0 auto;padding-left:5vh;padding:0 2em;}
+#associations {display:flex;flex-direction:row;}
+    #associations div {flex:1 1 auto;}
+    #associations p {margin-top:0;}
+#buttons {display:flex;justify-content:center;min-height:15vh;margin:2vh 0;}
+    #buttons i {position:relative;left:1vw;flex:0 1 center;margin:auto;}
+    #buttons div {display:block;align-self:center;padding:0 5vw;text-align:center;}
+#contact {display:flex;flex-direction:row;margin:2vh 0; }
+#contact ul {margin:4vw auto;}
+#contact ul:first-child {margin:4vw 0;}
+/* Mobile Devices */
+@media screen and (max-width: 1085px) {
+    #intro {flex-direction:column;padding:1vw;}
+    #attorneys div {padding:0 20px 20px;float:left;} 
+    #associations, #contact {flex-direction:column;}
+    #associations, #contact ul {margin:0;2vh}
+}
+
+.hibiscus {background-color:plum;background-image:linear-gradient(to bottom right, lavender 0%, plum 100%);}
+#welcome {font-family:'Tahoma';font-size:1em;text-align:center;}
+    #welcome a:link, 
+    #welcome a:visited {text-decoration:none;display:block;color:#FFF;font-size:1em;border:2px solid white;padding:30px 10px;}    
+#intro {box-shadow:0px 50px 100px 200px rgba(0, 0, 0, 0.2) inset;text-shadow:2px 2px 2px #222;background:url('https://raw.githubusercontent.com/LuckyMonkey/proulxlaw/master/20170624_121720.jpg');background-size:cover;background-position:center;color:white;}
+#attorneys {font-size:3vw;}
+@media screen and (min-width: 1085px) {#attorneys {font-size:1.6em;} }
+#contact {box-shadow:0px 2px 5px #aaa inset;}
+#contact ul li {padding-left:0px;}
+    #buttons i {font-size:6vw;color:#ddd;margin-bottom:0.2em; text-shadow:1px 1px 4px #222;}
+
+/** LIGHTBOX MARKUP **/
+.lightbox {
+	/* Default lightbox to hidden */
+	display:none;
+	/* Position and style */
+	position:fixed;
+	z-index:999;
+	width:100%;
+	height:100%;
+	text-align:center;
+	top:0;
+	left:0;
+	background:rgba(0,0,0,0.8);
+}
+.lightbox div {
+	/** Pad the lightbox image */
+	max-width: 90%;
+	max-height: 80%;
+	margin-top: 2%;
+    background:white;
+}
+.lightbox:target {
+	/** Remove default browser outline */
+	outline: none;
+	/** Unhide lightbox **/
+    display: block;
+}
