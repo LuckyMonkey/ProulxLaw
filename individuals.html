@@ -17,7 +17,7 @@
     
     
     <!-- load form styles -->
-	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link rel="stylesheet" type="text/css" href="clientForm/style.css">
 
 	<!-- load jquery if not already loaded, the only dependency from google's CDN -->
 	<script type="text/javascript">
@@ -27,7 +27,7 @@
 	</script>
 
 	<!-- load the javascript required to validate and submit the form via ajax -->
-	<script type="text/javascript" src="assets/main.js"></script>
+	<script type="text/javascript" src="clientForm/main.js"></script>
     
 </head>
 <body>
@@ -66,7 +66,8 @@
 
 
 <section id='form'>
-    <form id="contact"  action="assets/sendform.php" method="post">
+   <i>The use of the Internet or this form for communication with the firm or any individual member of the firm does not establish an attorney-client relationship. Confidential or time-sensitive information should not be sent through this form.</i>
+    <form id="contact"  action="clientForm/sendform.php" method="post">
 	<ul>
 		<li class="default required">
 			<label for="id_full-name">Full Name</label>

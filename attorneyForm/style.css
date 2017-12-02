@@ -1,0 +1,223 @@
+#attorneys ul, #attorneys li, #attorneys input, #attorneys textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  font: 13px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+}
+#attorneys ul li {
+  display: block;
+}
+#attorneys ul li.error span {
+  font-weight: bold;
+  width: auto;
+}
+#attorneys ul li label {
+  font-weight: bold;
+}
+#attorneys ul li label:hover {
+  cursor: pointer;
+}
+#attorneys ul li input[type=text], #attorneys ul li textarea {
+  border: 1px solid #cccccc;
+  outline: 0;
+  box-sizing: content-box;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+#attorneys ul li input {
+  width: auto;
+}
+#attorneys ul li ul li label {
+  font-weight: normal;
+}
+#attorneys ul li ul li:first-child label {
+  font-weight: bold;
+}
+
+#attorneys {
+  float: left;
+  margin: 20px 0;
+  width: 400px;
+}
+#attorneys ul {
+  width: 400px;
+}
+#attorneys ul li {
+  margin-top: 15px;
+}
+#attorneys ul li label {
+  display: block;
+  margin-bottom: 4px;
+}
+#attorneys ul li input[type=text] {
+  padding: 0 4px;
+  width: 290px;
+  height: 25px;
+}
+#attorneys ul li textarea {
+  width: 390px;
+  padding: 4px;
+  height: 100px;
+}
+@media only screen and (max-width: 350px) {
+  #attorneys ul li textarea {
+    width: 290px;
+  }
+}
+#attorneys ul li select {
+  width: 300px;
+  height: 27px;
+}
+#attorneys ul li input[type=submit] {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid transparent;
+  padding: 0 15px 0 40px;
+  height: 32px;
+  line-height: 32px;
+  cursor: pointer;
+}
+#attorneys ul li:first-child {
+  margin-top: 0;
+}
+#attorneys ul li.error span {
+  width: 280px;
+  display: block;
+  margin-top: 10px;
+  padding: 0 10px;
+  line-height: 27px;
+  position: relative;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+#attorneys ul li.error span:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 10px;
+  width: 10px;
+  height: 5px;
+}
+#attorneys ul li.error textarea + .error-message {
+  width: 380px;
+}
+@media only screen and (max-width: 350px) {
+  #attorneys ul li.error textarea + .error-message {
+    width: 280px;
+  }
+}
+#attorneys ul li ul li {
+  margin-top: 0;
+}
+#attorneys ul li ul li label {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+#attorneys ul li ul li label input[type=radio], #attorneys ul li ul li label input[type=checkbox] {
+  margin-right: 10px;
+  position: relative;
+  top: 2px;
+  left: 2px;
+  width: auto;
+  height: auto;
+}
+#attorneys.ie7 input[type=submit] {
+  padding: 0 15px;
+  background-image: none;
+}
+#attorneys.ie6 .input-text, #attorneys.ie6 .textarea {
+  width: 300px;
+  height: 27px;
+  border: 1px solid #aaaaaa;
+}
+#attorneys.ie6 .textarea {
+  width: 400px;
+  height: 200px;
+}
+
+#attorneys * {
+  color: #444444;
+}
+#attorneys ul li input[type=text], #attorneys ul li textarea {
+  border-color: #cccccc;
+  border-top-color: #666666;
+  background: white url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB9wJCRQxKUbwz30AAAANSURBVAjXY/j06dN/AAmGA9YRinsqAAAAAElFTkSuQmCC) left top repeat-x;
+}
+#attorneys ul li input[type=text]:focus, #attorneys ul li textarea:focus {
+  background-color: #ffffe6;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB9wJCRQxH4lKWuQAAAANSURBVAjXY/j/f9d/AAlxA7iU/lWYAAAAAElFTkSuQmCC);
+}
+#attorneys ul li.error span {
+  background: #ff2a2a;
+  color: white;
+}
+#attorneys ul li.error span:before {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAABCSURBVAiZdYzBDcAgEMNCxwlDch2SecwH0QPUSPkklgugLbWGJKn32Hbgqx3YzEb+nsPUkqMtuzTBG7rggv0H5bwDQ4coY9OOIYEAAAAASUVORK5CYII=);
+}
+#attorneys ul li.error input[type=text], #attorneys ul li.error textarea {
+  border-color: #ff2a2a;
+  border-top-color: #d40303;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB9wJCRQpIL0374AAAAANSURBVAjXY/h/9ep/AAkpA6nx+1etAAAAAElFTkSuQmCC);
+}
+#attorneys ul li.error input[type=text]:focus, #attorneys ul li.error textarea:focus {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB9wJCRQpIL0374AAAAANSURBVAjXY/h/9ep/AAkpA6nx+1etAAAAAElFTkSuQmCC);
+}
+#attorneys ul li.success input[type=text], #attorneys ul li.success textarea {
+  border-color: #87de87;
+  border-top-color: #2ca02c;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB9wJCRQwJCFagoEAAAANSURBVAjXY7j+5fp/AAjqA6K5jX8QAAAAAElFTkSuQmCC);
+}
+#attorneys ul li.success input[type=text]:focus, #attorneys ul li.success textarea:focus {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB9wJCRQwJCFagoEAAAANSURBVAjXY7j+5fp/AAjqA6K5jX8QAAAAAElFTkSuQmCC);
+}
+#attorneys ul li ul li:first-child label:hover {
+  background: none;
+}
+#attorneys ul li ul li label {
+  margin: 0;
+  padding: 0 4px;
+  line-height: 27px;
+  width: 296px;
+}
+#attorneys ul li ul li label:hover {
+  background: #fcfcfc;
+}
+#attorneys ul li input[type=submit] {
+  color: white;
+  background: #0055d4 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAJCAYAAAACTR1pAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAACDSURBVCiRlZCxDcIwFERfHGqXTJBB2CtSOhZhArbICpSpKakdPZoPMiER4aSTrbt7zW/UG3AEMvv0AO4J6IArMO6Axth2jVoiPAMz0APtApijb6MnVWUf7wmYqnyKrN6AWhYe1Kxewjmyj90a+IIJf0FqOWwcYdj4v1Uf5y+l35N1PQELJ4H5a5SMTgAAAABJRU5ErkJggg==) 15px center no-repeat;
+  border-color: #004bbb;
+}
+#attorneys ul li input[type=submit]:hover {
+  background-color: #005fee;
+  border-color: #0055d4;
+}
+#attorneys ul li input[type=submit]:active {
+  background-color: #0051ca;
+  border-color: #004bbb;
+}
+#attorneys ul li input[type=submit].sending {
+  background-color: #e6e6e6;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAADCAYAAABI4YUMAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAwSURBVAiZY/j//3/h////H0FpBijGK8YAZfyB0jAFeMWYGBgY+hkYGJ5BaRjAKwYAJmBhTdrC7roAAAAASUVORK5CYII=);
+  background-position-y: 18px;
+  border-color: #cccccc;
+}
+#attorneys ul li input[type=submit].sent {
+  background-color: #00aa00;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAMCAYAAAC9QufkAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAACHSURBVCiRpdCxCYIxFEXhJ2hl6wBO4Aru4EJmC6dwB/8RnMBWsLWy8LMxEmICEi+EwLs5B14CMXCSf0AcRsETFiPgBStEWaQfwDs2eV4WOoLcP7EruxquBWW3r8WtR1lQzo6Y9eCWIOeMZesvevvl3LBugS24FDyw7YGIeXwnve9rREyN/pMXv20c0OtO6lgAAAAASUVORK5CYII=);
+  background-position-x: 13px;
+  border-color: #005500;
+}
+#attorneys ul li input[type=submit].try-again {
+  background-color: #ff2a2a;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAJCAYAAAACTR1pAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAACDSURBVCiRlZCxDcIwFERfHGqXTJBB2CtSOhZhArbICpSpKakdPZoPMiER4aSTrbt7zW/UG3AEMvv0AO4J6IArMO6Axth2jVoiPAMz0APtApijb6MnVWUf7wmYqnyKrN6AWhYe1Kxewjmyj90a+IIJf0FqOWwcYdj4v1Uf5y+l35N1PQELJ4H5a5SMTgAAAABJRU5ErkJggg==);
+  background-position-x: 13px;
+  border-color: #d40303;
+}
