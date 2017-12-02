@@ -13,82 +13,134 @@
     <script src="https://use.fontawesome.com/c59b006972.js"></script>
     <!-- Custom Stylesheet -->
     <link href='appearence.css' rel='stylesheet'>
+    
+    
+    
+    <!-- load form styles -->
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+
+	<!-- load jquery if not already loaded, the only dependency from google's CDN -->
+	<script type="text/javascript">
+		/*<![CDATA[*/
+		window.jQuery || document.write('<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">\x3C/script>');
+		/*]]>*/
+	</script>
+
+	<!-- load the javascript required to validate and submit the form via ajax -->
+	<script type="text/javascript" src="assets/main.js"></script>
+    
 </head>
 <body>
-<header class='hibiscus'><h1>Proulx Law Offices</h1></header>
+<header class='hibiscus'><a href='index.html'><h1>Proulx Law Offices</h1></a></header>
 <main>
 
-<section id='intro'>
-
-        <div>
-            <i class='fa fa-gavel'></i>
-            <i class='fa fa-usd'></i>
-            <i class='fa fa-money'></i>
-            <i class='fa fa-credit-card-alt'></i>
-            <i class='fa fa-support'></i>
-            <i class='fa fa-question-circle'></i>
-            <i class='fa fa-institution'></i>
-            <i class='fa fa-home'></i>
-            <i class='fa fa-handshake-o'></i>
-            <i class='fa fa-diamond'></i>
-            <i class='fa fa-car'></i>
-            <i class='fa fa-balance-scale'></i>
-            <i class='fa fa-history'></i>
-            
-        </div>
-
+<section id='individuals'>
 </section>
 
 <section>
-
-<h5>Do you Know?</h5>
-    <p>You are entitled to one free credit report from <i>each</i> of the three credit reporting agencies every year?</p>
-<h5>Do you know?</h5>
-    <p>To file a bankruptcy you need to take a pre-credit councling course from an agency approved by the CF?</p>
-<h5>Do you know?</h5>
-    <p>You can meet and speak with me about your situation the first time for free?</p>
+    <h3>Do you know?</h3>
 </section>
 
-<section id='contact'>
-    <p class="vcard">
-        <a class="fn org url" href="http://jplaw.me" title="Proulx Law Offices Contact Informtion">
-            <span class="hide organization-name">Jenny Proulx</span>
-            <span class="hide organization-unit">Proulx Law Offices</span>
-        </a>
-        <br/>
-        <span class="adr">
-        <i>Located in New Hampshire with several office locations Northeastern Massachusetts and Boston area</i>
-            <a class="extended-address" href="http://jplaw.me">Proulx Law Offices</a><br />
-            <span class="street-address">1087 Elm Street, Suite 223</span><br /> 
-            <span class="locality">Manchester</span>, <span class="region">New Hampshire</span>
-            <span class="postal-code">03101</span>
-            <span class="hide country">USA</span>
-        </span><br /></p>
-            <span class="tel"><span class="type">Telephone (Massachusetts)</span>:<span class="value">+1(617) 335-8145</span></span><br />
-            <span class="tel"><span class="type">Telephone (New Hampshire)</span>:<span class="value">+1(603) 731-3965</span></span><br />
-            <span class="tel"><span class="type">Fax</span>: <span class="value">+1(617) 507-7693</span></span>
+<section id='steps'>
+    <div>
+        <p>You are entitled to one free credit report from <i>each</i> of the three credit reporting agencies every year?</p><br /><br />
+        <a href=''>Get my free credit reports</a>
+</div>
+
+<div>
+        <p>Before you can file a bankruptcy petition, you must take to take a credit counseling course from an approved credit counseling agency?
+        </p>
+        <a href=''>Courses in New Hampshire</a>
+        <a href=''>Courses in Massachusetts</a>
+</div>
+
+<div><br />
+        <p>You can meet and speak with me for free about your situation?
+        </p><br /><br />
+        <a href=''>Get Started!</a>
+    </div>
+</section><br /><br />
+
+
+
+
+
+<section id='form'>
+    <form id="contact"  action="assets/sendform.php" method="post">
+	<ul>
+		<li class="default required">
+			<label for="id_full-name">Full Name</label>
+			<input type="text" name="full-name" id="id_full-name" />
+		</li>
+		<li>
+			<ul>
+				<li><label>I am currently</label></li>
+				<li><label><input type="radio" name="i-am-currently" value="Married" checked >Married</label></li>
+				<li><label><input type="radio" name="i-am-currently" value="Single" >Single</label></li>
+				<li><label><input type="radio" name="i-am-currently" value="Divorced/Widowed" >Divorced/Widowed</label></li>
+			</ul>
+		</li>
+		<li class="default required">
+			<label for="id_address">Address</label>
+			<input type="text" name="address" id="id_address" />
+		</li>
+		<li class="numeric required">
+			<label for="id_phone-number">Phone Number</label>
+			<input type="text" name="phone-number" id="id_phone-number" />
+		</li>
+		<li>
+			<ul>
+				<li><label>Okay to Leave a message</label></li>
+				<li><label><input type="radio" name="okay-to-leave-a-message" value="Yes" checked >Yes</label></li>
+				<li><label><input type="radio" name="okay-to-leave-a-message" value="No" >No</label></li>
+			</ul>
+		</li>
+		<li>
+			<ul>
+				<li><label>Best time to Call</label></li>
+				<li><label><input type="radio" name="best-time-to-call" value="Morning" checked >Morning</label></li>
+				<li><label><input type="radio" name="best-time-to-call" value="Afternoon" >Afternoon</label></li>
+				<li><label><input type="radio" name="best-time-to-call" value="Evening" >Evening</label></li>
+			</ul>
+		</li>
+		<li class="email required">
+			<label for="id_email-address">Email Address</label>
+			<input type="text" name="email-address" id="id_email-address" />
+		</li>
+		<li class="required">
+			<label for="id_additional-information">Additional Information</label>
+			<textarea name="additional-information" id="id_additional-information"></textarea>
+		</li>
+		<li>
+			<input type="submit" value="Send" />
+		</li>
+	</ul>
+</form>
+</section>
+
+<br /><br /><br />
+<section id='footer'>
+    <ul class='fa-ul'>
+        <li class='hide'>Jenny Proulx</li>
+        <li><strong>Proulx Law Offices</strong></li>
+        <li>1087 Elm Street, Suite 223</li>
+        <li>Manchester, New Hampshire</li>
+        <li>03103 USA</li>
+    </ul>
+    <ul class='fa-ul'>
+       <br />
+        <li><i class='fa fa-li fa-phone'></i>(MA) +1 (617) 335-8145 </li>
+        <li><i class='fa fa-li fa-phone'></i>(NH) +1 (603) 731-3965 </li>
+        <li><i class='fa fa-li fa-fax'></i><sup>(FAX)</sup>&nbsp;&nbsp;+1 (617) 507-7693</li>
+    </ul>
+    <ul class='fa-ul'>
+       <br />
+        <li><i class='fa fa-li fa-facebook'></i> Facebook</li>
+        <li><i class='fa fa-li fa-linkedin'></i> LinkedIn</li>
+        <li><i class='fa fa-li fa-gavel'></i> Avvo</li>
+    </ul>
+    
 </section>
 </main>
 </body>
 </html>
-
-
-
-
-
-
-<a href="#_" class="lightbox" id="img1">
-  
-   <div>
-   <section id='form'>
-    <form>
-        First name: <input type="text" name="firstname"><br />
-        Email Address: <input type="text" name="email"><br />
-        Phone Number: <input type="text" name="phonenum"><br />
-        Issue: <input type="text" name="issue"><br />
-    </form>
-    Disclaimer language
-The use of the Internet or this form for communication with the firm or any individual member of the firm does not establish an attorney-client relationship. Confidential or time-sensitive information should not be sent through this form.   
-</section>
-    </div>
-</a>

@@ -1,0 +1,73 @@
+<!--
+	This very basic html file and the assets folder make the form work. Use this page as a starting point or copy the form code into your projects.
+
+	Thank you for using formbakery.com
+-->
+
+<html>
+<head>
+	<title>contact</title>
+
+	<!-- you need this for non-english text -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	
+</head>
+
+<body>
+
+<!-- begin form html -->
+<form id="contact"  action="assets/sendform.php" method="post">
+	<ul>
+		<li class="default required">
+			<label for="id_full-name">Full Name</label>
+			<input type="text" name="full-name" id="id_full-name" />
+		</li>
+		<li>
+			<ul>
+				<li><label>I am currently</label></li>
+				<li><label><input type="radio" name="i-am-currently" value="Married" checked >Married</label></li>
+				<li><label><input type="radio" name="i-am-currently" value="Single" >Single</label></li>
+				<li><label><input type="radio" name="i-am-currently" value="Divorced/Widowed" >Divorced/Widowed</label></li>
+			</ul>
+		</li>
+		<li class="default required">
+			<label for="id_address">Address</label>
+			<input type="text" name="address" id="id_address" />
+		</li>
+		<li class="numeric required">
+			<label for="id_phone-number">Phone Number</label>
+			<input type="text" name="phone-number" id="id_phone-number" />
+		</li>
+		<li>
+			<ul>
+				<li><label>Okay to Leave a message</label></li>
+				<li><label><input type="radio" name="okay-to-leave-a-message" value="Yes" checked >Yes</label></li>
+				<li><label><input type="radio" name="okay-to-leave-a-message" value="No" >No</label></li>
+			</ul>
+		</li>
+		<li>
+			<ul>
+				<li><label>Best time to Call</label></li>
+				<li><label><input type="radio" name="best-time-to-call" value="Morning" checked >Morning</label></li>
+				<li><label><input type="radio" name="best-time-to-call" value="Afternoon" >Afternoon</label></li>
+				<li><label><input type="radio" name="best-time-to-call" value="Evening" >Evening</label></li>
+			</ul>
+		</li>
+		<li class="email required">
+			<label for="id_email-address">Email Address</label>
+			<input type="text" name="email-address" id="id_email-address" />
+		</li>
+		<li class="required">
+			<label for="id_additional-information">Additional Information</label>
+			<textarea name="additional-information" id="id_additional-information"></textarea>
+		</li>
+		<li>
+			<input type="submit" value="Send" />
+		</li>
+	</ul>
+</form>
+<!-- end form html -->
+
+</body>
+</html>
