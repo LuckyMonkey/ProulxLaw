@@ -1,23 +1,25 @@
 # Proulx Law Offices
-[Website](http://jplaw.me/)
-[Development Site](https://luckymonkey.github.io/proulxlaw/)
+
+* [Website](http://jplaw.me/)
+
+* [Development Site](https://luckymonkey.github.io/proulxlaw/)
 
 ## What this is
-A website to help provide clients and attorneys with access to resources, help with thier bankrupsy situation, and most importantly provide a way for them to establish contact with Proulx Law Offices.
+A website to help provide clients and attorneys with access to resources, help with thier bankrupcy situation, and most importantly provide a way for them to establish contact with Proulx Law Offices.
 
 ## Getting Started
 Website contains 3 pages, page depth is 1, and 5 links to exterior web, 2 websites that are resources and steps to starting the bankrupcy process, and 3 portals for Proulx Law Offices social media pages.
 
 ### Links
-Facebook Profile
-LinkedIn Profile
-Avvo Profile
+* [Facebook Profile](https://facebook.com/jplaw.me/)
+* [LinkedIn Profile](https://linkedin.com/in/jenny-louise-proulx-721a631b/)
+* [Avvo Profile](https://avvo.com/attorneys/03101-nh-jenny-proulx-4303376.html)
 
-Get free Credit Reports
-Take credit counciling course
+* [Get Free Credit Reports](https://avvo.com/attorneys/03101-nh-jenny-proulx-4303376.html)Get free Credit Reports
+* [Take credit counciling course](https://avvo.com/attorneys/03101-nh-jenny-proulx-4303376.html)
 
 ### Pages
-Homepage -
+Homepage - Landing page, giving information about law firm, and providing links for both Individuals and Attorneys
 Individuals - Provides two links
 Attorneys - Provides basic disclaimer and form, form is expanded from the individuals one.
 
@@ -31,7 +33,8 @@ Internet Contact Form - Provide forms for clients and attorneys to contact Proul
 
 Social Media Hub - Provide Portals to Social Media pages and link them together, in the future allow content to be linked back to webpage from a feed.
 
-### Page Header Code
+### Page Header and Footer Code
+The purpose of posting this here is because each page operates as it's own independant html file and not importing content from another source via PHP (yet). Each change done to either the header or footer of this site must be applied to each page individually, as well as updated here.
 
 ```
 <header class='hibiscus'>
@@ -49,8 +52,6 @@ Social Media Hub - Provide Portals to Social Media pages and link them together,
     </nav>
 </header>
 ```
-
-### Page Footer Code
 
 ```
 <section class='hibiscus' id='footer'>
@@ -90,7 +91,7 @@ Social Media Hub - Provide Portals to Social Media pages and link them together,
 
 * [jQuery](http://jquery.com) - Javascript library used for email form Validation.
 
-* [FontAwesome](http://www.dropwizard.io/1.0.2/docs/) - Generic Icons compiled into a font, used througout the website.
+* [FontAwesome](http://fontawesome.com) - Generic Icons compiled into a font, used througout the website.
 
 * [MapGlyphs](http://mapglyphs.com/) - Map vectors compiled into a font, used for the shapes of the states on the homepage.
 
