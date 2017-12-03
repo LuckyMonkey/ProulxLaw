@@ -32,12 +32,14 @@ sup {position:relative;top:0.1em;left:0.1em;}
 @media screen and (max-width: 1085px) {.mobileHide {display:none;}}
 
 /* Page Sections and Element layout */
-#intro, #individuals {display:flex;flex-direction:row-reverse;align-items:center;padding:4vw 8vw;min-height:46vh}
+#intro {display:flex;flex-direction:row-reverse;align-items:center;padding:4vw 8vw;min-height:46vh}
+#individuals {padding:4vw 8vw;min-height:30vh;text-align:center;}
 #welcome {flex:1 1 auto;padding:30px;}
 #proulx {flex:2 0 auto;padding-left:5vh;padding:0 2em;}
 #associations {display:flex;flex-direction:row;}
     #associations div {flex:1 1 auto;}
     #associations p {margin-top:0;}
+#description {margin:6vh auto;}
 
 #steps {display:flex;flex-direction:row;}
 
@@ -77,7 +79,7 @@ sup {position:relative;top:0.1em;left:0.1em;}
 #welcome a:hover {background:white;color:#222;text-shadow:none;}
 
 #intro, #individuals {box-shadow:0px 50px 100px 200px rgba(0, 0, 0, 0.2) inset;text-shadow:2px 2px 2px #222;background:url('https://raw.githubusercontent.com/LuckyMonkey/proulxlaw/master/20170624_121720.jpg');background-size:cover;background-position:center;color:white;}
-#individuals {background:url('20150318_130328%20-%20Copy.jpg');background-position:center;}
+#individuals {background:url('rainbow.jpg');background-position:bottom;background-size: contain;}
 
 #proulx {font-size:3vw;}
 @media screen and (min-width: 1085px) {#proulx {font-size:1.6em;} }

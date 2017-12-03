@@ -2,22 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Proulx Law Offices - For Individuals</title>
+    <title>Proulx Law Offices - Attorneys</title>
     <!-- Browser Reset -->
-    <link href="https://necolas.github.io/normalize.css/7.0.0/normalize.css" rel="stylesheet">
+    <link href="https://necolas.github.io/normalize.css/7.0.0/normalize.css" type="text/css" rel="stylesheet">
     <!-- Text Fonts -->                                
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400" type="text/css" rel="stylesheet">
     <!-- Symbol Fonts -->
-    <link href='https://luckymonkey.github.io/proulxlaw/mapglyphs/mapglyphs.css' rel='stylesheet'>
+    <link href='https://luckymonkey.github.io/proulxlaw/mapglyphs/mapglyphs.css'  type="text/css" rel='stylesheet'>
     <script src="https://use.fontawesome.com/c59b006972.js"></script>
     <!-- Custom Stylesheet -->
-    <link href='appearence.css' rel='stylesheet'>
+    <link href='appearence.css' type="text/css" rel='stylesheet'>
     
-    
+    <style>
+        #interview p {}
+    </style>
     
     <!-- load form styles -->
-	<link rel="stylesheet" type="text/css" href="clientForm/style.css">
+	<link rel="stylesheet" type="text/css" href="attorneyForm/style.css">
 
 	<!-- load jquery if not already loaded, the only dependency from google's CDN -->
 	<script type="text/javascript">
@@ -27,7 +29,7 @@
 	</script>
 
 	<!-- load the javascript required to validate and submit the form via ajax -->
-	<script type="text/javascript" src="clientForm/main.js"></script>
+	<script type="text/javascript" src="attorneyForm/main.js"></script>
     
 </head>
 <body>
@@ -55,86 +57,53 @@
 </header>
 <main>
 
-<section id='individuals'>
-<section id='description'>
-    <h5>Bankruptcy is not the end....<br />Bankruptcy can be a new beginning!</h5>
-    <p>Let me help you take your first step towards a fresh start!</p>
+<section id='individuals'><br /><br />
+<section id='interview'>
+    <p>To schedule an informational interview or request services<br />please fill out this form completely.</p><p>Within 24 hours you will receive a confrmation email.</p>
+<p>If you do not receive one, please call us at 1(617) 335-8145<br /><br />I look foward to working with you.</p>
 </section>
 </section>
-
-<section>
-    <h3>Do you know?</h3>
-</section>
-
-<section id='steps'>
-    <div>
-        <p>You are entitled to one free credit report from <i>each</i> of the three credit reporting agencies every year?</p><br /><br />
-        <a href=''>Get my free credit reports</a>
-</div>
-
-<div>
-        <p>Before you can file a bankruptcy petition, you must take to take a credit counseling course from an approved credit counseling agency?
-        </p>
-        <a href=''>Courses in New Hampshire</a>
-        <a href=''>Courses in Massachusetts</a>
-</div>
-
-<div><br />
-        <p>You can meet and speak with me for free about your situation?
-        </p><br /><br />
-        <a href=''>Get Started!</a>
-    </div>
-</section><br /><br />
-
-
 
 
 
 <section id='form'>
    <i>The use of the Internet or this form for communication with the firm or any individual member of the firm does not establish an attorney-client relationship. Confidential or time-sensitive information should not be sent through this form.</i>
-    <form id="contact"  action="clientForm/sendform.php" method="post">
+    <form id="attorneys"  action="assets/sendform.php" method="post">
 	<ul>
 		<li class="default required">
-			<label for="id_full-name">Full Name</label>
-			<input type="text" name="full-name" id="id_full-name" />
-		</li>
-		<li>
-			<ul>
-				<li><label>I am currently</label></li>
-				<li><label><input type="radio" name="i-am-currently" value="Married" checked >Married</label></li>
-				<li><label><input type="radio" name="i-am-currently" value="Single" >Single</label></li>
-				<li><label><input type="radio" name="i-am-currently" value="Divorced/Widowed" >Divorced/Widowed</label></li>
-			</ul>
+			<label for="id_ordering-attorney">Ordering Attorney</label>
+			<input type="text" name="ordering-attorney" id="id_ordering-attorney" />
 		</li>
 		<li class="default required">
-			<label for="id_address">Address</label>
-			<input type="text" name="address" id="id_address" />
+			<label for="id_firm-name">Firm Name</label>
+			<input type="text" name="firm-name" id="id_firm-name" />
+		</li>
+		<li class="default required">
+			<label for="id_firm-address">Firm Address</label>
+			<input type="text" name="firm-address" id="id_firm-address" />
 		</li>
 		<li class="numeric required">
 			<label for="id_phone-number">Phone Number</label>
 			<input type="text" name="phone-number" id="id_phone-number" />
 		</li>
-		<li>
-			<ul>
-				<li><label>Okay to leave a message?</label></li>
-				<li><label><input type="radio" name="okay-to-leave-a-message" value="Yes" checked >Yes</label></li>
-				<li><label><input type="radio" name="okay-to-leave-a-message" value="No" >No</label></li>
-			</ul>
-		</li>
-		<li>
-			<ul>
-				<li><label>Best time to call</label></li>
-				<li><label><input type="radio" name="best-time-to-call" value="Morning" checked >Morning</label></li>
-				<li><label><input type="radio" name="best-time-to-call" value="Afternoon" >Afternoon</label></li>
-				<li><label><input type="radio" name="best-time-to-call" value="Evening" >Evening</label></li>
-			</ul>
-		</li>
 		<li class="email required">
 			<label for="id_email-address">Email Address</label>
 			<input type="text" name="email-address" id="id_email-address" />
 		</li>
-		<li class="required">
-			<label for="id_additional-information">Additional information</label>
+		<li class="default">
+			<label for="id_contact-person">Contact Person</label>
+			<input type="text" name="contact-person" id="id_contact-person" />
+		</li>
+		<li class="default required">
+			<label for="id_deadline-due-date">Deadline/Due Date</label>
+			<input type="text" name="deadline-due-date" id="id_deadline-due-date" />
+		</li>
+		<li class="default">
+			<label for="id_statute-of-limitations">Statute of Limitations</label>
+			<input type="text" name="statute-of-limitations" id="id_statute-of-limitations" />
+		</li>
+		<li>
+			<label for="id_additional-information">Additional Information</label>
 			<textarea name="additional-information" id="id_additional-information"></textarea>
 		</li>
 		<li>
