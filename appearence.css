@@ -10,9 +10,10 @@ header nav a i {background-color:purple;border-radius:10px;position:relative;top
 header nav a:hover {opacity:1;}
 header nav img {position: relative;border-radius:5px;filter: hue-rotate(90deg);margin-left:1px;margin-right:2vh;}
 
-main {padding-bottom:20px;box-shadow:0px 4px 20px #222;min-height:100vh;}
-@media screen and (max-width: 1400px) {main {overflow: hidden; width:100%;}}
+main {box-shadow:0px 4px 20px #222;min-height:110vh;}
+@media screen and (max-width: 1400px) {main {overflow:hidden;width:100%;}}
 main section {padding:1vh 11%;}
+main section:last-child {margin-bottom: 0px;padding:-10px 11%;overflow:hidden;position: relative;top:20px;padding-bottom:20px;}
 
 body {font-family:'Open Sans', sans-serif;background:#ddd;background-image:url('https://raw.githubusercontent.com/LuckyMonkey/proulxlaw/master/regal.png')}
 main {background:#fff;}
