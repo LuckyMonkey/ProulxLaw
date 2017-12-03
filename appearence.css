@@ -82,7 +82,7 @@ sup {position:relative;top:0.1em;left:0.1em;}
 #welcome a:hover {background:white;color:#222;text-shadow:none;}
 
 #intro, #individuals {box-shadow:0px 50px 100px 200px rgba(0, 0, 0, 0.2) inset;text-shadow:2px 2px 2px #222;background:url('https://raw.githubusercontent.com/LuckyMonkey/proulxlaw/master/20170624_121720.jpg');background-size:cover;background-position:center;color:white;}
-#individuals {background:url('rainbow.jpg');background-position:bottom;background-size:cover;}
+#individuals {background-image:url('rainbow.jpg');background-position:bottom;font-size:2vw}
 
 #proulx {font-size:3vw;}
 @media screen and (min-width: 1085px) {#proulx {font-size:1.6em;} }
