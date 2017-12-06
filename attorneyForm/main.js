@@ -137,7 +137,7 @@ $(document).ready(function() {
 		submit: function() {
 			var self = this;
 
-			$.post('assets/sendform.php', el.form.serialize() + '&request_method=ajax', function(response) {
+			$.post('attorneyForm/sendform.php', el.form.serialize() + '&request_method=ajax', function(response) {
 				// does the word 'PASS' exist in response
 				var success = /PASS/.test(response) ? true : false;
 
